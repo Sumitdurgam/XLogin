@@ -20,6 +20,7 @@ function XLogin() {
   return (
     <div style={{ textAlign: 'left', paddingLeft: '0.70%' }}>
       <h1> Login Page</h1>
+      {message && <p>{message}</p>}
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
@@ -45,7 +46,6 @@ function XLogin() {
         <button type="submit">Submit</button>
         </div>
       </form>
-      {message && <p>{message}</p>}
     </div>
   );
 }
